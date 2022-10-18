@@ -1,0 +1,166 @@
+@import "./animation.css";
+@import "./hover.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#container {
+  height: 1250px;
+}
+
+header {
+  height: 12.5%;
+}
+
+#util_menu_bg {
+  height: 50%;
+  background-color: #000;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 20%;
+  left: calc(50% - 36px / 2);
+}
+
+.logo img {
+  width: 30%;
+}
+
+.util_left {
+  position: absolute;
+  top: 28%;
+  left: 2%;
+}
+
+.util_left li {
+  display: inline-block;
+  margin: 0 23px 0 0;
+}
+
+.util_left li a,
+.util_right li a {
+  font-size: 0.9rem;
+  font-weight: 200;
+  color: #ccc;
+  transition: 0.4s ease-in;
+}
+
+.util_right {
+  position: absolute;
+  top: 28%;
+  right: 2%;
+}
+
+.util_right li {
+  display: inline-block;
+  margin: 0 0 0 23px;
+}
+
+.util_right a img {
+  width: 15px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+#nav_menu_bg {
+  height: 50%;
+  background-color: #fff;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  top: calc(30%);
+  width: 100%;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 2.3437% 0 2.3437%;
+}
+
+nav li a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  transition: 0.4s ease-in;
+}
+
+#contents {
+  height: 93.2806%;
+}
+
+section {
+  width: 100%;
+  height: 35%;
+  float: left;
+  position: relative;
+}
+
+#sec1 {
+  background-image: url(../images/car-1.png);
+  background-size: cover;
+}
+
+#sec2 {
+  background-image: url(../images/car-2.png);
+  background-size: cover;
+}
+
+#sec3 {
+  background-image: url(../images/car-3.png);
+  background-size: cover;
+}
+
+#sec4 {
+  background-image: url(../images/car-4.png);
+  background-size: cover;
+}
+
+.button {
+  position: absolute;
+  color: #fff;
+  text-align: left;
+  width: 70%;
+  bottom: 50%;
+  left: 5%;
+}
+
+.button h1 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.button p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.button span {
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 1%;
+  padding: 1px;
+  border: 1px solid #fff;
+  transition: 0.5s ease-in;
+}

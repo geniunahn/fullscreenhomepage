@@ -1,0 +1,158 @@
+/* 첫화면을 2초 동안 로딩화면으로 만드는 이벤트 */
+
+#loading-screen {
+  background-color: #000;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loadingScreen forwards;
+  animation-delay: 2s;
+}
+
+@keyframes loadingScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* 로딩이 끝난 후 모든 오브젝트가 자기 위치로 찾아가는 이벤트 모음 */
+
+.logo {
+  opacity: 0;
+  animation: logo_move 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes logo_move {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.util_left {
+  opacity: 0;
+  animation: util_left_move 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes util_left_move {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.util_right {
+  opacity: 0;
+  animation: util_right_move 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes util_right_move {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+nav {
+  opacity: 0;
+  animation: nav_move 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes nav_move {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.button {
+  opacity: 0;
+  animation: button_move 1s ease-in-out forwards;
+}
+
+#button1 {
+  animation-delay: 2s;
+}
+
+#button2 {
+  animation-delay: 2.3s;
+}
+
+#button3 {
+  animation-delay: 2.6s;
+}
+
+#button4 {
+  animation-delay: 2.9s;
+}
+
+@keyframes button_move {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 해당 섹션에 마우스를 올리면 섹션의 버튼이 자동으로 반짝이는 이벤트 */
+
+#sec1:hover span,
+#sec2:hover span,
+#sec3:hover span,
+#sec4:hover span {
+  animation: buttonShine 1s linear infinite alternate;
+}
+
+@keyframes buttonShine {
+  from {
+    border-color: #fff;
+  }
+  to {
+    border-color: #d5001c;
+  }
+}
+
+/* 해당 섹션에 마우스를 올리면 섹션 이미지가 살짝 빛나는 이벤트 */
+
+#sec1:hover,
+#sec2:hover,
+#sec3:hover,
+#sec4:hover {
+  opacity: 1;
+  animation: sec_flash 1.5s;
+}
+
+@keyframes sec_flash {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}

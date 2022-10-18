@@ -1,0 +1,19 @@
+/* 유틸 메뉴에 마우스를 올리면 밝아지는 이벤트 */
+
+.util_left a:hover,
+.util_right a:hover {
+  color: #fff;
+}
+
+/* nav 메뉴에 마우스를 올리면 붉은색이 되는 이벤트 */
+
+nav li a:hover {
+  color: #d5001c;
+}
+
+/* 섹션 메뉴에 마우스를 올리면 반응하는 이벤트 */
+
+.button span:hover {
+  background-color: #fff;
+  color: #d5001c;
+}
