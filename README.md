@@ -1,7 +1,7 @@
 # 페라리 풀 페이지 프로젝트
 - 제작자 : 안정원
 - 깃허브 url :
-- 프로젝트 live url :https://geniunahn.github.io/fullscreenhomepage/
+- 프로젝트 url :https://geniunahn.github.io/fullscreenhomepage/
 
 # 제작 상황 및 목표
 - 제작 상황 : 
