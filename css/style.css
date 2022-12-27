@@ -118,22 +118,22 @@ section {
 }
 
 #sec1 {
-  background-image: url(../images/car-1.png);
+  background-image: url(../images/car-1.jpg);
   background-size: cover;
 }
 
 #sec2 {
-  background-image: url(../images/car-2.png);
+  background-image: url(../images/car-2.jpg);
   background-size: cover;
 }
 
 #sec3 {
-  background-image: url(../images/car-3.png);
+  background-image: url(../images/car-3.jpg);
   background-size: cover;
 }
 
 #sec4 {
-  background-image: url(../images/car-4.png);
+  background-image: url(../images/car-4.jpg);
   background-size: cover;
 }
 
